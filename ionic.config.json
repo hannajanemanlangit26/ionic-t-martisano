@@ -1,0 +1,7 @@
+{
+  "name": "ionic-t-martisano",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react-vite"
+}
