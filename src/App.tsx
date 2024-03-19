@@ -10,10 +10,11 @@ import {
   setupIonicReact
 } from '@ionic/react';
 import { IonReactRouter } from '@ionic/react-router';
-import { calculator, ellipse, personAddOutline, square, triangle } from 'ionicons/icons';
+import { calculator, ellipse, homeOutline, personAddOutline, square, triangle } from 'ionicons/icons';
 import Tab1 from './pages/Tab1';
 import Tab2 from './pages/Tab2';
 import Tab3 from './pages/Tab3';
+
 
 /* Core CSS required for Ionic components to work properly */
 import '@ionic/react/css/core.css';
@@ -55,6 +56,12 @@ const App: React.FC = () => (
           </Route>
         </IonRouterOutlet>
         <IonTabBar slot="bottom">
+
+        <IonTabButton tab="Home" href="/Home">
+            <IonIcon aria-hidden="true" icon={homeOutline} />
+            <IonLabel>home</IonLabel>
+          </IonTabButton>
+
           <IonTabButton tab="tab1" href="/tab1">
             <IonIcon aria-hidden="true" icon={personAddOutline} />
             <IonLabel>profile</IonLabel>
